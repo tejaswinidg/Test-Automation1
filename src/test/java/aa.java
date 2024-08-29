@@ -33,18 +33,18 @@ public class aa {
 	 driver = new ChromeDriver(options);// *[@id="modalId"]
 	 
 	 
-	  driver.get("https://parabank.parasoft.com/parabank/register.htm");
-	  driver.findElement(By.xpath("//input[@name='username']")).sendKeys("jk");
+	//   driver.get("https://parabank.parasoft.com/parabank/register.htm");
+	//   driver.findElement(By.xpath("//input[@name='username']")).sendKeys("jk");
 	 
 	
-	  driver.findElement(By.xpath("//*[text()='Admin Page']")).click();
-	String h=  driver.getTitle();
-	System.out.println("title of the window2");
-	  System.out.println(h);
-	  driver.navigate().back();
-	  String f=driver.getTitle();
-	  System.out.println("title of window1");
-	  System.out.println(f);
+	//   driver.findElement(By.xpath("//*[text()='Admin Page']")).click();
+	// String h=  driver.getTitle();
+	// System.out.println("title of the window2");
+	//   System.out.println(h);
+	//   driver.navigate().back();
+	//   String f=driver.getTitle();
+	//   System.out.println("title of window1");
+	//   System.out.println(f);
 	  
 	  
 	  
