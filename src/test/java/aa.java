@@ -27,25 +27,6 @@ public class aa {
 	@Test
 	public void t() throws Exception{
 
-		
-		
-		
-		
-		
-		
-		
-		
-		
-		System.out.println();
-		
-		
-		
-		
-	
-
-
-		System.out.println("ooooo");
-
 	WebDriverManager.chromedriver().setup();
 	ChromeOptions options = new ChromeOptions();
 	options.addArguments("--disable-notifications");
