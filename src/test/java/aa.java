@@ -36,8 +36,10 @@ public class aa {
 	  driver.get("https://parabank.parasoft.com/parabank/register.htm");
 	  driver.findElement(By.xpath("//input[@name='username']")).sendKeys("jk");
 	 
+
 	System.out.println("hhhhhhhhh");
 	System.out.println("klllllll");
+
 	
 	  driver.findElement(By.xpath("//*[text()='Admin Page']")).click();
 	String h=  driver.getTitle();
@@ -48,7 +50,9 @@ public class aa {
 	  System.out.println("title of window1");
 	  System.out.println(f);
 	  
-	 
+
+	 System.out.println("jkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk");
+
 	  
 //	  try {
 //		
