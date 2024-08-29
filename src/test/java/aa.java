@@ -42,11 +42,7 @@ public class aa {
 	  driver.findElement(By.xpath("//*[text()='Admin Page']")).click();
 	String h=  driver.getTitle();
 	System.out.println("title of the window2");
-	  System.out.println(h);
-	  driver.navigate().back();
-	  String f=driver.getTitle();
-	  System.out.println("title of window1");
-	  System.out.println(f);
+	
 	  
 
 	System.out.println("hhhhhhhhhhh");
