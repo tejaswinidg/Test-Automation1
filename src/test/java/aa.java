@@ -33,8 +33,8 @@ public class aa {
 	 driver = new ChromeDriver(options);// *[@id="modalId"]
 	 
 	 
-//	  driver.get("https://parabank.parasoft.com/parabank/register.htm");
-//	  driver.findElement(By.xpath("//input[@name='username']")).sendKeys("jk");
+	  driver.get("https://parabank.parasoft.com/parabank/register.htm");
+	  driver.findElement(By.xpath("//input[@name='username']")).sendKeys("jk");
 	 
 	
 //	  driver.findElement(By.xpath("//*[text()='Admin Page']")).click();
