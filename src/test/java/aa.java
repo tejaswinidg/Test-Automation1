@@ -52,24 +52,24 @@ public class aa {
 	
 
 	  
-	  try {
-		
-driver.findElement(By.xpath("//h2[text()='TYPES OF MANUAL']"));
-System.out.println("l");
-
-JavascriptExecutor js=(JavascriptExecutor) driver;
-                             
-js.executeScript("arguments[0].click();");
-	  List<WebElement> li=driver.findElements(By.xpath("//div [@class=\"sideBar--wrap newLeftbar\"]//h2[text()='TYPES OF MANUAL']/following-sibling::ul"));
-	 
-	  for(WebElement g:li) {
-		  if(g.getText().contains("White box Testing - Software Engineering")) {
-			  g.click();
-			  
-		  }
-	  }
-
-	  }
+//	  try {
+//		
+//driver.findElement(By.xpath("//h2[text()='TYPES OF MANUAL']"));
+//System.out.println("l");
+//
+//JavascriptExecutor js=(JavascriptExecutor) driver;
+//                             
+//js.executeScript("arguments[0].click();");
+//	  List<WebElement> li=driver.findElements(By.xpath("//div [@class=\"sideBar--wrap newLeftbar\"]//h2[text()='TYPES OF MANUAL']/following-sibling::ul"));
+//	 
+//	  for(WebElement g:li) {
+//		  if(g.getText().contains("White box Testing - Software Engineering")) {
+//			  g.click();
+//			  
+//		  }
+//	  }
+//
+//	  }
 //	  catch(Exception e){
 //			String FileName="iiiI";
 //			// Creating instance of File
