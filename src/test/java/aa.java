@@ -26,6 +26,15 @@ public class aa {
 	WebDriver driver;
 	@Test
 	public void t() throws Exception{
+
+
+
+
+
+
+
+
+		
 	
 	WebDriverManager.chromedriver().setup();
 	ChromeOptions options = new ChromeOptions();
