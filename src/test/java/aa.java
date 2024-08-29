@@ -37,8 +37,6 @@ public class aa {
 	  driver.findElement(By.xpath("//input[@name='username']")).sendKeys("jk");
 	 
 
-	System.out.println("hhhhhhhhh");
-	System.out.println("klllllll");
 
 	
 	  driver.findElement(By.xpath("//*[text()='Admin Page']")).click();
@@ -51,7 +49,7 @@ public class aa {
 	  System.out.println(f);
 	  
 
-	 System.out.println("jkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkkk");
+	
 
 	  
 //	  try {
