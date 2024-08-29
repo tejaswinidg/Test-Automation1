@@ -29,7 +29,6 @@ public class aa {
 
 	WebDriverManager.chromedriver().setup();
 	ChromeOptions options = new ChromeOptions();
-	options.addArguments("");
 	options.addArguments("--remote-allow-origins=*");
 	 driver = new ChromeDriver(options);// *[@id="modalId"]
 	 
