@@ -30,11 +30,17 @@ Add to Cart: Adding products to the shopping cart and verifying cart contents.
 Checkout Process: Completing the checkout process with valid payment details.
 
 # Installation
-1.Clone the repository:
+1.Clone the repository:https://github.com/tejaswinidg/Test-Automation1
 2.Ensure you have the following installed:
 Java JDK (version 8 or later)
 Maven
 Selenium WebDriver
 TestNG
 3.Install the necessary dependencies using Maven
+
+
+# Project Structure
+src/test/java: Contains the TestNG test classes and  Contains the Page Object classes.
+test-data: Excel files for test data input using Apache POI.
+pom.xml: Maven configuration file for dependencies and build.
 
