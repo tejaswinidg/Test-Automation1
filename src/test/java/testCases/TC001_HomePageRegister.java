@@ -20,8 +20,9 @@ import pageObjects.RegisterPage;
 
 public class TC001_HomePageRegister extends BaseClass {
 
-	@Test(priority=1)
+	@Test(priority=1,groups= {"Sanity"})
 	public void verify_accountRegister() {
+		logger.info("****Starting TC001_HomePageRegister **** ");
 		
 		HomePage hp= new HomePage(driver);
 	    driver.manage().window().maximize();
@@ -33,14 +34,14 @@ public class TC001_HomePageRegister extends BaseClass {
 		
 	}
 		
-//		@Test(dataProvider="data",dataProviderClass=util1.class,priority=2)
-//	
+	//	@Test(dataProvider="data",dataProviderClass=util1.class,priority=2)
+	
 //		public void test(String firstname,String lastname,String email,String password1)  {
-//		System.out.println("aaaaaaaaaaaaaaaaaaaaaaaaaaa");
-//		System.out.println(firstname);
-//		
-//		driver.get("https://demo.opencart.com/en-gb?route=account/register");
-//		
+////		System.out.println("aaaaaaaaaaaaaaaaaaaaaaaaaaa");
+////		System.out.println(firstname);
+////		
+////		driver.get("https://demo.opencart.com/en-gb?route=account/register");
+//		try {
 //		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 //		wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h1[text()='Register Account']")));
 //		System.out.println("Moving into the register page");
@@ -66,6 +67,13 @@ public class TC001_HomePageRegister extends BaseClass {
 //		    System.out.println("An error occurred: " + e.getMessage());
 //		    // You can also log the stack trace if needed
 //		    e.printStackTrace();
+//		}
+//		}
+//		catch(Exception e) {
+//			logger.error("Test failed");
+//			logger.debug("debug logs");
+//			Assert.fail();
+//			
 //		}
 //	}
 		
