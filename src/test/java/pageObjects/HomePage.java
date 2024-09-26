@@ -7,6 +7,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -21,14 +22,22 @@ public class HomePage extends BasePage{
 		super(driver);
 		
 	}
-//	@FindBy(xpath="//span[normalize-space()='My Account']")
-//	WebElement element;
+	@FindBy(xpath="//span[normalize-space()='My Account']")
+	WebElement element;
+	
+	@FindBy(xpath="//div[@class='container']//div[@class='nav float-end']//ul//li[2]//div")
+	WebElement dropdown;
 	
 	@FindBy(xpath="//a[normalize-space()='Register']")
 	WebElement register;
 	
 	@FindBy(xpath="//a[normalize-space()='Login']") 
 	WebElement login;
+	
+	public void myAccount() {
+		element.isDisplayed();
+	}
+	
 	
 	
 	public void clickMyAccount() {
@@ -56,7 +65,7 @@ public class HomePage extends BasePage{
 		}
 
 		    if(register.isDisplayed() && login.isDisplayed()) { 
-		    	System.out.println("nnnnnnnnnnnnnnnnnnn");
+		    	System.out.println("Register and login dropdown are visible");
 		    	
 		    }
 		   
@@ -66,7 +75,7 @@ public class HomePage extends BasePage{
 
 
 public void MyAccount_Register() {
-	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='dropdown']//a[normalize-space()='Register']")));
 	register.click();
 	String registerUrl= driver.getCurrentUrl();
@@ -77,11 +86,7 @@ public void MyAccount_Register() {
 	
 }
 public void MyAccount_LogIn() {
-	
-	
-	System.out.println("jjjjjjjjj");
-	
-	
+
 	WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 	wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='dropdown']//a[normalize-space()='Login']")));	
 	login.click();
@@ -90,5 +95,17 @@ public void MyAccount_LogIn() {
 	System.out.println("LogIn url is displayed");
 	System.out.println(logInUrl);
 	
+}
+
+public void MyAccount_dropdownClose() {
+	System.out.println("aaaa");
+	clickMyAccount();
+	System.out.println("nnnnnnnnnnn");
+	Actions actions = new Actions(driver);
+    actions.moveByOffset(0, 0).click().build().perform();   
+    boolean isDropdownVisible = register.isDisplayed();
+    System.out.println("yyyyyyyy");
+    System.out.println(isDropdownVisible);
+    Assert.assertTrue(isDropdownVisible, "Dropdown did  close after clicking outside the menu");
 }
 }
